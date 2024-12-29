@@ -5,7 +5,7 @@ nvofapi_src = [
 thread_dep = dependency('threads')
 
 
-nvofapi_dll = shared_library('nvofapi64.dll', nvofapi_src,
+nvofapi_dll = shared_library('nvofapi64_cuda.dll', nvofapi_src,
   name_prefix         : '',
   dependencies        : [ thread_dep, lib_dl ],
   include_directories : include_path,
